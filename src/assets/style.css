@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    button[type="submit"] {
+        font-family: inherit;
+        font-size: 16px;
+    }
+}
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #0c0c0c 0%,
+        #1a1a2e 15%,
+        #16213e 35%,
+        #0f3460 50%,
+        #533a7d 70%,
+        #8b5a8c 85%,
+        #a0616a 100%
+    );
+    min-height: 100vh;
+    
+}
+
+.app-title {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.container {
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.card-task {
+  background-color: #ffffff; 
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+  
+}
+
+
+.card img {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.text-truncate {
+  display: -webkit-box;
+ 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-sm-custom {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.book-details img {
+  max-width: 300px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar .btn {
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar .btn:hover {
+  transform: translateY(-2px);
+}
+
+form input,
+form textarea {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.book-enter-from {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+}
+
+.book-enter-to {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.book-enter-active,
+.book-leave-active {
+  transition: all 0.35s ease;
+}
+.book-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.swiper-slide > div {
+  width: 250px;      /* або 300px */
+  aspect-ratio: 1/1;
+}
